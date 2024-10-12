@@ -2,6 +2,10 @@
 
 ---
 
+## [Week 1 Page](https://kang0408.github.io/HIT15-WEB-PRIVATE-2024/week-1/)
+
+---
+
 ## Nội dung
 
 ### [I. Cài đặt IDE, Extensions](#i-cài-đặt-ide-extensions)
