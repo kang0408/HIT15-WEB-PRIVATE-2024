@@ -6,18 +6,22 @@
 
 ### [I. Cài đặt IDE, Extensions](#i-cài-đặt-ide-extensions)
 
-[1. IDE](#1-ide-visual-studio-code)
+[1. IDE](#1-ide)
+
 [2. Extensions](#2-extensions)
 
 ### [II. Git & Github](#ii-git--github)
 
 [1. Git](#1-git)
+
 [2. Github](#2-github)
 
 ### [III. HTML, CSS & Javascript](#iii-html-css--javascript)
 
 [1. HTML](#1-html)
+
 [2. CSS](#2-css)
+
 [3. Javascript](#3-javascript)
 
 ---
@@ -145,8 +149,11 @@ b. Liên kết Git và Github
      ![github-pages](./image/github-pages.png)
      Nhấn "Visit site"
    - Quay lại thư mục chứa file .html và copy path
+
      ![copy-path](./image/copy-path.png)
+
    - Quay lại Github pages, paste vào đường link + enter
+
      ![github-page-link](./image/github-page-link.png)
      ![github-page-result](./image/github-page-result.png)
 
