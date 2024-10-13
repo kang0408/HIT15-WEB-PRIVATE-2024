@@ -2,7 +2,7 @@
 
 ---
 
-## [Week 1 Page](https://kang0408.github.io/HIT15-WEB-PRIVATE-2024/week-1/)
+## [Home](../README.html)
 
 ---
 
