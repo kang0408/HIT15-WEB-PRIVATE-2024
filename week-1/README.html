@@ -900,11 +900,7 @@
             </li>
             <li>
               Remote repo: Đây là repo để chia sẽ giữa nhiều người và bố trí
-              trên server chuyên dụng<br />
-              <img
-                src="./image/repo.png"
-                alt="Mối quan hệ giữa local repo và remote repo"
-              />
+              trên server chuyên dụng
             </li>
           </ul>
         </li>
@@ -922,43 +918,86 @@
       <p>d. Cài đặt và cấu hình</p>
       <ol>
         <li>
-          <a href="https://git-scm.com/downloads?ref=blog.haposoft.com"
-            >Download Git</a
-          >
+          <p>
+            <a href="https://git-scm.com/downloads?ref=blog.haposoft.com"
+              >Download Git</a
+            >
+          </p>
         </li>
         <li>
-          Thiết lập thông tin cá nhân trên git
+          <p>Thiết lập thông tin cá nhân trên git</p>
           <pre
             data-role="codeBlock"
             data-info="git"
             class="language-git git"
           ><code>git config --global user.name <span class="token string">"Tên của bạn"</span>
 git config --global user.email <span class="token string">"email@example.com"</span>
+git config --list
 </code></pre>
-          <img src="./image/git-config.png" alt="git-config" />
+          <ul>
+            <li>
+              Mở <code>Git Bash</code> trên window. Gõ 2 lệnh đầu tiên để thiết
+              lập thông tin tên và email. Sau đó gõ lệnh thứ 3, phóng to màn
+              hình terminal sẽ thấy thông tin ở 2 dòng cuối.
+            </li>
+            <li>
+              Nhấn phím <code>Q</code> trên bàn phím để có thể tiếp tục gõ lệnh
+            </li>
+          </ul>
+          <p><img src="./image/git-config.png" alt="git-config" /></p>
         </li>
         <li>
-          Khởi tạo git
+          <p>Khởi tạo git</p>
           <pre
             data-role="codeBlock"
             data-info="git"
             class="language-git git"
           ><code>git init
 </code></pre>
-          <img src="./image/git-init.png" alt="git-init" />
+          <p>
+            Được sử dụng để khởi tạo một kho lưu trữ Git mới (Git repository)
+            trong thư mục hiện tại.
+          </p>
+          <ul>
+            <li>Tạo mới một thư mục</li>
+            <li>Vào thư mục và nhấn chuột phải chọn <code>Git Bash</code></li>
+          </ul>
+          <p><img src="./image/git-bash.png" alt="git-init" /></p>
+          <ul>
+            <li>Gõ lệnh</li>
+          </ul>
+          <p><img src="./image/git-init.png" alt="git-init" /></p>
+          <p>
+            Sau khi gõ lệnh trên, trong thư mục vừa tạo sẽ xuất hiện một thư mục
+            ẩn <code>.git</code>.<br />
+            Nếu không thấy có thể vào <code>View</code> để hiển thị thư mục ẩn
+          </p>
+          <p><img src="./image/hidden-folder.png" alt="git-init" /></p>
         </li>
         <li>
-          Kiểm tra trạng thái
+          <p>
+            Kiểm tra trạng thái<br />
+            Kiểm tra sự thay đổi trong dự án
+          </p>
           <pre
             data-role="codeBlock"
             data-info="git"
             class="language-git git"
           ><code>git status
 </code></pre>
-          <img src="./image/git-status.png" alt="git-status" />
+          <p>
+            Trong thư mục vừa tạo, hãy tạo ra file <code>.txt</code>, sau đó
+            tiếp tục gõ lệnh trên vào terminal và sẽ có kết quả như hình dưới
+            đây:
+          </p>
+          <p><img src="./image/git-status.png" alt="git-status" /></p>
+          <p>
+            Hình ảnh trên là git thông báo về sự thay đổi xảy ra trong thư mục
+            đó
+          </p>
         </li>
         <li>
-          Thêm file vào vùng lưu trữ tạm (staging area)
+          <p>Thêm file vào vùng lưu trữ tạm (staging area)</p>
           <pre
             data-role="codeBlock"
             data-info="git"
@@ -966,43 +1005,86 @@ git config --global user.email <span class="token string">"email@example.com"</s
           ><code>git add &lt;file&gt;
 git add .
 </code></pre>
-          <img src="./image/git-add.png" alt="git-add" />
+          <ul>
+            <li>
+              Có 2 cách thêm file vào vùng lưu trữ. Với cách 1 sẽ thêm thêm từng
+              file với tên cụ thể. Còn cách 2 sẽ thêm tất cả các thay đổi vào
+              vùng tạm
+            </li>
+            <li>
+              Mục đích: Quá trình này cho phép kiểm soát và quản lý những gì sẽ
+              được đưa vào một commit, thay vì phải commit toàn bộ các thay đổi
+              ngay lập tức, giúp tạo ra những commit rõ ràng và có ý nghĩa
+            </li>
+          </ul>
+          <p><img src="./image/git-add.png" alt="git-add" /></p>
         </li>
         <li>
-          Commit
+          <p>Commit</p>
           <pre
             data-role="codeBlock"
             data-info="git"
             class="language-git git"
           ><code>git commit -m <span class="token string">"Mô tả đặt ở đây"</span>
 </code></pre>
-          <img src="./image/git-commit.png" alt="git-commit" />
+          <p>
+            <code>git commit</code> có mục đích ghi lại những thay đổi đã được
+            thêm vào vùng tạm (Staging Area) giống như việc chụp lại sự thay đổi
+            của dự án tại 1 thời điểm nhất định<br />
+            <img src="./image/git-commit.png" alt="git-commit" />
+          </p>
         </li>
         <li>
-          Xem lịch sử commit
+          <p>Xem lịch sử commit</p>
           <pre
             data-role="codeBlock"
             data-info="git"
             class="language-git git"
           ><code>git log
 </code></pre>
-          <img src="./image/git-log.png" alt="git-log" />
+          <p>
+            Sử dụng để hiển thị lịch sử commit của dự án, cho phép bạn xem chi
+            tiết về các commit đã được thực hiện.<br />
+            <img src="./image/git-log.png" alt="git-log" />
+          </p>
         </li>
       </ol>
       <h3 id="2-github">2. Github</h3>
       <p>
         a. Github là gì?<br />
-        Github là nền tảng lưu trữ mã nguồn online, cho phép lập trình viên lưu
-        trữ, chia sẻ và làm việc trên cùng một repo<br />
+        GitHub là một nền tảng dựa trên web được thiết kế để lưu trữ mã nguồn và
+        hỗ trợ quản lý phiên bản (version control) bằng cách sử dụng Git. Nó
+        cung cấp không gian lưu trữ cho các dự án mã nguồn (repository) và các
+        công cụ để quản lý, theo dõi và làm việc trong các dự án phần mềm.<br />
         b. Liên kết Git và Github
       </p>
+      <ul>
+        <li>
+          Khi liên kết Git và Github, mã nguồn sẽ được lưu trữ online, tức bạn
+          có thể truy cập đến mã nguồn của mình từ bất cứ đâu, chỉ cần có mạng
+          Internet
+        </li>
+        <li>
+          Giúp sao lưu dữ liệu tránh trường hợp dữ liệu bị mất hay máy tính hỏng
+          học
+        </li>
+        <li>
+          Giúp chia sẻ mã nguồn và làm việc nhóm với các công cụ, tính năng giúp
+          kiểm soát mã nguồn, xử lý lỗi
+        </li>
+      </ul>
       <ol>
         <li>
           <p>
-            Tạo github và khởi tạo repo<br />
-            <img src="./image/add-repo-1.png" alt="tạo-repo" />
+            Tạo tài khoản github, đăng nhập và khởi tạo repo<br />
+            Sau khi đăng nhập thành công, có 2 cách để tạo repo như hình dưới.
           </p>
           <p><img src="./image/add-repo-2.png" alt="tạo-repo" /></p>
+          <p><img src="./image/add-repo-3.png" alt="tạo-repo" /></p>
+          <p>
+            Sau khi nhập các thông tin như tên repo cùng các lựa chọn sau đó và
+            tạo thành công repo sẽ hiển thị một trang như hình dưới đây:
+          </p>
           <p><img src="./image/new-repo.png" alt="new-repo" /></p>
         </li>
         <li>
@@ -1013,6 +1095,10 @@ git add .
             class="language-git git"
           ><code>git remote add origin &lt;link repo&gt;
 </code></pre>
+          <p>
+            Tiếp tục với terminal đang dùng ở phía trên, gõ lệnh trên vào với
+            đường link repo vừa tạo:
+          </p>
           <p><img src="./image/git-remote-add.png" alt="git-remote-add" /></p>
           <pre
             data-role="codeBlock"
@@ -1020,6 +1106,11 @@ git add .
             class="language-git git"
           ><code>git remote -v
 </code></pre>
+          <p>
+            Sau đó, tiếp tục gõ lệnh trên để kiểm tra xem local repo ở máy bạn
+            đã được liên kết đến remote repo trên github hay chưa, nếu hiển thị
+            kết quả như trong hình nghĩa là đã liên kết thành công.
+          </p>
           <p><img src="./image/git-remote-v.png" alt="git-remote-v" /></p>
         </li>
         <li>
@@ -1028,16 +1119,63 @@ git add .
             data-role="codeBlock"
             data-info="git"
             class="language-git git"
-          ><code>git push -u origin master
+          ><code>git push -u origin &lt;branch&gt;
 </code></pre>
-          <p><img src="./image/git-push.png" alt="git-push" /></p>
+          <ul>
+            <li>
+              Được sử dụng để đẩy các commit từ kho lưu trữ Git cục bộ (local
+              repository) lên kho lưu trữ từ xa (remote repository)
+            </li>
+            <li>
+              Chú ý phần <code>&lt;branch&gt;</code> này sẽ là tên nhánh chính.
+              Thường là <code>master</code> hoặc <code>main</code> và được xác
+              định ở đây
+            </li>
+          </ul>
+          <p><img src="./image/main-branch.png" alt="git-push" /></p>
+          <ul>
+            <li>
+              Sau khi thực hiện lệnh sẽ có kết quả như sau. Tiếp đó bạn hay
+              refresh lại trang repo bạn vừa tạo trên github để thấy được kết
+              quả<br />
+              <img src="./image/git-push.png" alt="git-push" />
+            </li>
+          </ul>
+          <p><img src="./image/result.png" alt="git-push" /></p>
         </li>
         <li>
           <p>Github Page</p>
           <ul>
             <li>
               <p>
-                Vào Settings<br />
+                Đầu tiên hãy vào trang
+                <a
+                  href="https://raw.githubusercontent.com/kang0408/test/refs/heads/master/week-1/index.html"
+                  >html này</a
+                >
+                này
+              </p>
+            </li>
+            <li>
+              <p>
+                Chuột phải chọn <code>Save as</code> để tải file
+                <code>index.html</code> về máy
+              </p>
+            </li>
+            <li>
+              <p>
+                Tạo 1 folder <code>week-1</code> trong folder bạn vừa tạo, đặt
+                file <code>index.html</code> vừa tải về vào đó và đẩy folder
+                <code>week-1</code> lên repo trên github theo hướng dẫn như
+                trên.<br />
+                Kết quả thành công khi trên repo có 1 folder
+                <code>week-1</code>, khi bấm vào nó sẽ có 1 file
+                <code>index.html</code>
+              </p>
+            </li>
+            <li>
+              <p>
+                Tìm đến Settings trong repo của bạn<br />
                 <img src="./image/settings.png" alt="settings" />
               </p>
             </li>
@@ -1051,29 +1189,32 @@ git add .
                 /><br />
                 <img src="./image/branch-select-1.png" alt="branch-select-1" />
               </p>
-              <p>và "Save"</p>
+              <p>Chọn nhánh <code>master</code> và "Save"</p>
             </li>
             <li>
               <p>
-                Đợi 1 lát và load lại trang<br />
+                Đợi 1 lát và load lại trang sẽ có kết quả như sau, nhấn
+                <code>Visit site</code><br />
                 <img src="./image/github-pages.png" alt="github-pages" /><br />
                 Nhấn "Visit site"
               </p>
             </li>
             <li>
-              <p>Quay lại thư mục chứa file .html và copy path</p>
+              <p>
+                Quay lại thư mục <code>week-1</code>, tìm tới file
+                <code>index.html</code> và copy path
+              </p>
               <p><img src="./image/copy-path.png" alt="copy-path" /></p>
             </li>
             <li>
-              <p>Quay lại Github pages, paste vào đường link + enter</p>
+              <p>
+                Quay lại Github pages, paste vào đường link rồi enter sẽ có kết
+                quả như sau:
+              </p>
               <p>
                 <img
                   src="./image/github-page-link.png"
                   alt="github-page-link"
-                /><br />
-                <img
-                  src="./image/github-page-result.png"
-                  alt="github-page-result"
                 />
               </p>
             </li>
