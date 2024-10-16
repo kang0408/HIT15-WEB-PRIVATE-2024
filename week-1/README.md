@@ -66,10 +66,14 @@ c. Khái niệm cơ bản
 - Clone: là hành động tải một bản sao có sẵn của một remote repo server nào đó có sẵn
 - Push: là hành động đưa các commit từ local repo lên remote repo
 
+![git-flow](./image/git-flow.png)
+
 d. Cài đặt và cấu hình
 
 1. [Download Git](https://git-scm.com/downloads?ref=blog.haposoft.com)
 2. Thiết lập thông tin cá nhân trên git
+
+   Mục đích của việc thiết lập thông tin cá nhân trên Git (bao gồm tên và địa chỉ email) là để Git có thể xác định người thực hiện các hành động trong quá trình quản lý phiên bản (version control). Tức là khi thực hiện một commit trong Git, thông tin cá nhân như tên và email sẽ được ghi lại cùng với commit đó.
 
    ```git
    git config --global user.name "Tên của bạn"
