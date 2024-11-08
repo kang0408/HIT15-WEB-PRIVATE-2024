@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HIT15 WEB PRIVATE 2024</title>
+    <title>Week 5</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -816,15 +816,451 @@
   </head>
   <body for="html-export">
     <div class="crossnote markdown-preview">
-      <h1 id="hit15-web-private-2024">HIT15-WEB-PRIVATE-2024</h1>
-      <p>Xin chào đến với lớp Web Private HIT15 2024</p>
-      <ul>
-        <li><a href="./week-1/README.html">Week 1</a></li>
-        <li><a href="./week-2/README.html">Week 2</a></li>
-        <li><a href="./week-3/README.html">Week 3</a></li>
-        <li><a href="./week-4/README.html">Week 4</a></li>
-        <li><a href="./week-5/README.html">Week 5</a></li>
-      </ul>
+      <h1 id="hit15-web-private-2024---week-5">
+        HIT15-WEB-PRIVATE-2024 - WEEK 5
+      </h1>
+      <hr />
+      <h2 id="homereadmehtml"><a href="../README.html">Home</a></h2>
+      <hr />
+      <h2 id="nội-dung">Nội dung</h2>
+      <h3
+        id="i-các-khái-niệm-cơ-bản-trong-flexboxi-các-khái-niệm-cơ-bản-trong-flexbox"
+      >
+        <a
+          href="#i-c%C3%A1c-kh%C3%A1i-ni%E1%BB%87m-c%C6%A1-b%E1%BA%A3n-trong-flexbox"
+          >I. Các khái niệm cơ bản trong Flexbox</a
+        >
+      </h3>
+      <h3 id="ii-thuộc-tính-flexboxii-thuộc-tính-flexbox">
+        <a href="#ii-thu%E1%BB%99c-t%C3%ADnh-flexbox">II. Thuộc tính Flexbox</a>
+      </h3>
+      <hr />
+      <h2 id="flexbox-trong-css">Flexbox trong CSS</h2>
+      <p>
+        Flexbox là một công cụ mạnh mẽ trong CSS giúp căn chỉnh, sắp xếp, và
+        phân bổ không gian giữa các phần tử trong một container. Nó đặc biệt hữu
+        ích cho việc tạo bố cục web responsive nhờ sự linh hoạt của nó
+      </p>
+      <hr />
+      <h2 id="i-các-khái-niệm-cơ-bản-trong-flexbox">
+        I. Các khái niệm cơ bản trong Flexbox
+      </h2>
+      <p><img src="./flex-box.png" alt="flex-box" /></p>
+      <ol>
+        <li>
+          <p><strong>Flex Container</strong>:</p>
+          <ul>
+            <li>
+              Là phần tử cha có <code>display: flex;</code>. Khi một phần tử trở
+              thành flex container, tất cả các phần tử con trực tiếp của nó sẽ
+              được gọi là <strong>flex items</strong> và được sắp xếp theo các
+              quy tắc của Flexbox.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Flex Item</strong>:</p>
+          <ul>
+            <li>
+              Là các phần tử con trực tiếp bên trong một flex container. Các
+              flex items có thể được điều chỉnh và sắp xếp linh hoạt theo trục
+              chính và trục phụ của container.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Main Axis (Trục chính)</strong>:</p>
+          <ul>
+            <li>
+              Trục chính là trục mà flex items được sắp xếp theo. Trục chính mặc
+              định là chiều ngang, nhưng có thể thay đổi bằng thuộc tính
+              <code>flex-direction</code>.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Cross Axis (Trục phụ)</strong>:</p>
+          <ul>
+            <li>
+              Trục vuông góc với trục chính. Trục phụ giúp căn chỉnh các flex
+              items dọc theo chiều vuông góc với trục chính.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Main Size</strong>:</p>
+          <ul>
+            <li>Kích thước của một flex item theo chiều của trục chính.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Cross Size</strong>:</p>
+          <ul>
+            <li>Kích thước của một flex item theo chiều của trục phụ.</li>
+          </ul>
+        </li>
+      </ol>
+      <hr />
+      <h3 id="ii-thuộc-tính-flexbox">II. Thuộc tính Flexbox</h3>
+      <ol>
+        <li>
+          <p>
+            <strong><code>display: flex;</code></strong>
+          </p>
+          <ul>
+            <li>
+              Kích hoạt Flexbox cho phần tử, biến nó thành flex container. Các
+              phần tử con của nó sẽ tự động trở thành flex items và chịu tác
+              động của các thuộc tính Flexbox.
+            </li>
+          </ul>
+          <pre
+            data-role="codeBlock"
+            data-info="css"
+            class="language-css css"
+          ><code><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </li>
+        <li>
+          <p>
+            <strong><code>flex-direction</code></strong>
+          </p>
+          <ul>
+            <li>Xác định hướng sắp xếp của các flex items.</li>
+            <li>
+              Giá trị:
+              <ul>
+                <li><code>row</code> (mặc định): Sắp xếp từ trái sang phải.</li>
+                <li><code>row-reverse</code>: Sắp xếp từ phải sang trái.</li>
+                <li><code>column</code>: Sắp xếp từ trên xuống dưới.</li>
+                <li><code>column-reverse</code>: Sắp xếp từ dưới lên trên.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">flex-direction</span><span class="token punctuation">:</span> row<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong><code>justify-content</code></strong>
+          </p>
+          <ul>
+            <li>Căn chỉnh các flex items dọc theo trục chính.</li>
+            <li>
+              Giá trị:
+              <ul>
+                <li><code>flex-start</code>: Căn về đầu trục chính.</li>
+                <li><code>flex-end</code>: Căn về cuối trục chính.</li>
+                <li><code>center</code>: Căn giữa trên trục chính.</li>
+                <li>
+                  <code>space-between</code>: Khoảng cách đều giữa các items.
+                </li>
+                <li>
+                  <code>space-around</code>: Khoảng cách đều xung quanh các
+                  items (bao gồm cả hai đầu container).
+                </li>
+                <li>
+                  <code>space-evenly</code>: Khoảng cách bằng nhau giữa các
+                  items và các cạnh của container.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">justify-content</span><span class="token punctuation">:</span> space-between<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong><code>align-items</code></strong>
+          </p>
+          <ul>
+            <li>Căn chỉnh các flex items dọc theo trục phụ.</li>
+            <li>
+              Giá trị:
+              <ul>
+                <li><code>flex-start</code>: Căn về đầu trục phụ.</li>
+                <li><code>flex-end</code>: Căn về cuối trục phụ.</li>
+                <li><code>center</code>: Căn giữa trên trục phụ.</li>
+                <li>
+                  <code>baseline</code>: Căn các items theo baseline của văn
+                  bản.
+                </li>
+                <li>
+                  <code>stretch</code> (mặc định): Các items sẽ giãn đầy
+                  container dọc theo trục phụ.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong><code>align-content</code></strong>
+          </p>
+          <ul>
+            <li>
+              Căn chỉnh các dòng của flex items khi có nhiều dòng (chỉ áp dụng
+              khi <code>flex-wrap: wrap;</code>).
+            </li>
+            <li>
+              Giá trị:
+              <ul>
+                <li>
+                  <code>flex-start</code>, <code>flex-end</code>,
+                  <code>center</code>, <code>space-between</code>,
+                  <code>space-around</code>, <code>stretch</code>.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span>
+  <span class="token property">align-content</span><span class="token punctuation">:</span> space-around<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong><code>flex-wrap</code></strong>
+          </p>
+          <ul>
+            <li>
+              Cho phép các flex items xuống dòng khi container không đủ rộng.
+            </li>
+            <li>
+              Giá trị:
+              <ul>
+                <li>
+                  <code>nowrap</code> (mặc định): Các items nằm trên một dòng
+                  duy nhất.
+                </li>
+                <li>
+                  <code>wrap</code>: Các items sẽ xuống dòng khi không đủ không
+                  gian.
+                </li>
+                <li>
+                  <code>wrap-reverse</code>: Các items xuống dòng nhưng theo thứ
+                  tự ngược.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong><code>gap</code></strong>
+          </p>
+          <ul>
+            <li>
+              Tạo khoảng cách giữa các flex items.
+              <ul>
+                <li>row-gap: khoảng cách giữa mỗi hàng</li>
+                <li>column-gap: khoảng cách giữa mỗi cột</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">gap</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span> <span class="token number">20</span><span class="token unit">px</span><span class="token punctuation">;</span>
+  &lt;!--  Khoảng cách giữa hàng là <span class="token number">10</span><span class="token unit">px</span><span class="token punctuation">;</span>
+   Khoảng cách giữa cột là <span class="token number">20</span><span class="token unit">px</span><span class="token punctuation">;</span> --&gt;
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong><code>flex-grow</code></strong>
+          </p>
+          <ul>
+            <li>
+              Điều chỉnh khả năng mở rộng của flex item khi có không gian trống.
+            </li>
+            <li>
+              Giá trị: Số không âm (mặc định là <code>0</code>). Số càng lớn,
+              flex item sẽ càng mở rộng nhiều hơn.
+            </li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+  <span class="token property">flex-grow</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong><code>flex-shrink</code></strong>
+          </p>
+          <ul>
+            <li>
+              Điều chỉnh khả năng co lại của flex item khi không đủ không gian.
+            </li>
+            <li>
+              Giá trị: Số không âm (mặc định là <code>1</code>). Số càng lớn,
+              flex item sẽ co lại nhiều hơn.
+            </li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+  <span class="token property">flex-shrink</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong><code>flex-basis</code></strong>
+          </p>
+          <ul>
+            <li>
+              Thiết lập kích thước ban đầu của flex item trước khi áp dụng
+              <code>flex-grow</code> và <code>flex-shrink</code>.
+            </li>
+            <li>
+              Giá trị có thể là bất kỳ kích thước hợp lệ nào (px, %, em, v.v.).
+            </li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+  <span class="token property">flex-basis</span><span class="token punctuation">:</span> <span class="token number">200</span><span class="token unit">px</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong><code>align-self</code></strong>
+          </p>
+          <ul>
+            <li>
+              Căn chỉnh một flex item theo trục phụ, ghi đè thuộc tính
+              <code>align-items</code> của container.
+            </li>
+            <li>
+              Giá trị: <code>auto</code>, <code>flex-start</code>,
+              <code>flex-end</code>, <code>center</code>, <code>baseline</code>,
+              <code>stretch</code>.
+            </li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+  <span class="token property">align-self</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong><code>order</code></strong>
+          </p>
+          <ul>
+            <li>
+              Xác định thứ tự sắp xếp của flex item trong container, mặc định là
+              <code>0</code>.
+            </li>
+            <li>Giá trị: Số nguyên (có thể âm).</li>
+            <li>
+              <strong>Ví dụ</strong>:
+              <pre
+                data-role="codeBlock"
+                data-info="css"
+                class="language-css css"
+              ><code><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+  <span class="token property">order</span><span class="token punctuation">:</span> <span class="token number">-1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <hr />
+      <h3 id="ví-dụ-tổng-hợp-và-trò-chơi">Ví dụ tổng hợp và trò chơi</h3>
+      <p>
+        👉 <a href="https://codepen.io/ndangelo/pen/BaamRam">Ví dụ ở đây</a
+        ><br />
+        👉 <a href="https://flexboxfroggy.com/">Trò chơi ở đây</a>
+      </p>
     </div>
   </body>
 </html>
