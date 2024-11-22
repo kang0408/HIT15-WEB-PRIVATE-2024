@@ -8,3 +8,4 @@ Xin chào đến với lớp Web Private HIT15 2024
 - [Week 4](./week-4/README.html)
 - [Week 5](./week-5/README.html)
 - [Week 6](./week-6/README.html)
+- [Week 7](./week-7/README.html)
