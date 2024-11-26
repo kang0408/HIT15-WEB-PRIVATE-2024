@@ -32,7 +32,7 @@ CSS Grid bao gồm các khái niệm cơ bản sau:
 
 1. **Grid Container**:
 
-   - Là phần tử cha được thiết lập thuộc tính `display: grid` hoặc `display: inline-grid`.
+   - Là phần tử cha được thiết lập thuộc tính `display: grid`
    - Chịu trách nhiệm định nghĩa bố cục, số hàng, số cột, và vị trí của các phần tử con.
 
 2. **Grid Item**:
@@ -196,6 +196,8 @@ Sử dụng `grid-template-areas` để đặt tên cho các vùng trong Grid:
   grid-area: footer;
 }
 ```
+
+!!! ::: Ngoài ra, còn có sử dụng `align-items`, `justify-items`, `align-content`, `justify-content`, `align-self`, `justify-self` để căn chỉnh vị trí của các ô trong grid.
 
 ---
 
