@@ -36,7 +36,7 @@ Sau đó xử lý các trường hợp của chỉ số BMI như sau và hiển 
 
 ![alt text](bai1.png)
 
-**Demo:** [Tính chỉ số BMI](https://hit-15-web-private-2024-btvn-week-11.vercel.app/ex-1/index.html)
+**Demo:** [Tính chỉ số BMI](https://hit-15-web-private-2024-btvn.vercel.app/week-11/ex-1/index.html)
 
 ### Bài 2:
 
@@ -44,4 +44,4 @@ Nhập vào số lượng số muốn sinh. Hãy xử lý và in ra màn hình t
 
 **Giao diện màn hình:**
 ![alt text](bai2.png)
-**Demo:** [Sinh số tự động](https://hit-15-web-private-2024-btvn-week-11.vercel.app/ex-2/index.html)
+**Demo:** [Sinh số tự động](https://hit-15-web-private-2024-btvn.vercel.app/week-11/ex-2/index.html)
