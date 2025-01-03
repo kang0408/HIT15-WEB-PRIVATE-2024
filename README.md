@@ -18,3 +18,5 @@
 | Tuần 13 | - String methods<br>- Array & Array methods<br>- Object & Object methods                                                                                                                                                                  | [Xem](./week-13/README.html)         |
 
 #### Kiến thức ngoài lề
+
+👉 [Tổng hợp cách căn giữa CSS theo chiều ngang, dọc, hai chiều](https://vietnix.vn/can-giua-css/)
