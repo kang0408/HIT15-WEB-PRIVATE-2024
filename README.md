@@ -20,3 +20,6 @@
 #### Kiến thức ngoài lề
 
 👉 [Tổng hợp cách căn giữa CSS theo chiều ngang, dọc, hai chiều](https://vietnix.vn/can-giua-css/)
+👉 [Hướng dẫn dùng thẻ a để "nhảy" tới một vị trí hay một trang cụ thể trong trang web](https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html)
+👉 [Custom thanh cuộn (Scroll)](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) / [Hành vi của thanh cuộn(Scroll)](https://www.w3schools.com/cssref/pr_scroll-behavior.php)
+👉 [How to make everything bạn muốn với HTML, CSS và JS đơn giản nhất](https://www.w3schools.com/howto/default.asp)
