@@ -89,7 +89,7 @@
 - **Cú pháp:**
 
   ```js
-  str.includes(substring, startIndex);
+  str.includes(searchString, position);
   ```
 
   - `searchString`: Chuỗi cần kiểm tra (bắt buộc).
@@ -104,7 +104,7 @@
   console.log(text.includes("Java", 5)); // false (bắt đầu tìm từ chỉ số 5)
   ```
 
-**4. split()**
+**5. split()**
 
 - Chia chuỗi thành mảng các chuỗi nhỏ dựa trên một ký tự hoặc chuỗi con dùng làm điểm phân tách.
 
@@ -128,7 +128,7 @@
   console.log(text.split("")); // ["a", "p", "p", "l", "e"]
   ```
 
-**5. indexOf()**
+**6. indexOf()**
 
 - Trả về chỉ số của lần xuất hiện đầu tiên của một chuỗi con.
 - Phân biệt chữ hoa và chữ thường.
@@ -140,7 +140,7 @@
   ```
 
   - `searchValue`: Chuỗi con cần tìm (bắt buộc).
-  - `start`: Vị trí bắt đầu tìm kiếm (không bắt buộc, mặc định là 0).
+  - `startIndex`: Vị trí bắt đầu tìm kiếm (không bắt buộc, mặc định là 0).
 
 - **Ví dụ:**
 
@@ -212,10 +212,13 @@ console.log(text.substring(4, 0)); // "Java" (tự động đổi thứ tự n�
 | `replace()`     | Thay thế một phần chuỗi bằng một chuỗi khác.                     | Thay thế lần đầu tiên tìm thấy.                                                                 | Chuỗi mới sau khi thay thế.             |
 | `charAt()`      | Trả về ký tự tại một vị trí nhất định trong chuỗi.               | Nếu vị trí nằm ngoài phạm vi, trả về chuỗi rỗng.                                                | Ký tự tại chỉ số được chỉ định.         |
 
+👉 Ngoài ra còn các phương thức khác
+
 - substr()
 - charCodeAt()
 - lastIndexOf()
 - repeat()
+- at()
 
 #### II. Array
 
