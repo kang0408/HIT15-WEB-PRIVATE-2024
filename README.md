@@ -16,10 +16,33 @@
 | Tuần 10 | - Đôi chút JS<br>- Các kiểu dữ liệu trong Javascript <br>- Biến và khai báo biến<br>- Hoisting và Scope<br>- String và Template Literals<br>- Toán tử (Operators)<br>- Cấu trúc điều kiện: if-else, switch case<br>- Vòng lặp: for, while | [Xem](./week-10/README.html) |
 | Tuần 11 | - DOM là gì<br>- Getting Element<br>- Adding attribute<br>- classList<br>- Adding Text to HTML element<br>- Adding style<br>- Manipulating DOM<br>- Event Listeners                                                                       | [Xem](./week-11/README.html) |
 | Tuần 13 | - String methods<br>- Array & Array methods<br>- Object & Object methods                                                                                                                                                                  | [Xem](./week-13/README.html) |
+| Tuần 14 | - Function<br>- Anothor Array methods<br> methods                                                                                                                                                                                         | [Xem](./week-14/README.html) |
 
 #### Kiến thức ngoài lề
 
-👉 [Tổng hợp cách căn giữa CSS theo chiều ngang, dọc, hai chiều](https://vietnix.vn/can-giua-css/)
-👉 [Hướng dẫn dùng thẻ a để "nhảy" tới một vị trí hay một trang cụ thể trong trang web](https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html)
-👉 [Custom thanh cuộn (Scroll)](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) / [Hành vi của thanh cuộn(Scroll)](https://www.w3schools.com/cssref/pr_scroll-behavior.php)
+**1. Kiến thức**
+🔑 [Tổng hợp cách căn giữa CSS theo chiều ngang, dọc, hai chiều](https://vietnix.vn/can-giua-css/)
+🔑 [Hướng dẫn dùng thẻ a để "nhảy" tới một vị trí hay một trang cụ thể trong trang web](https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html)
+🔑 [Custom thanh cuộn (Scroll)](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) / [Hành vi của thanh cuộn(Scroll)](https://www.w3schools.com/cssref/pr_scroll-behavior.php)
+🔑 [Đối tượng toán học Math trong JavaScript](https://viblo.asia/p/su-dung-math-trong-javascript-LzD5dwNWljY)
+🔑 [Hàm xử lý ngày tháng (Date) trong Javascript](https://viblo.asia/p/ham-xu-ly-ngay-thang-date-trong-javascript-XL6lA47DZek)
+🔑 [Truthy và Falsy trong Javascript](https://viblo.asia/p/truthy-va-falsy-trong-javascript-la-gi-RQqKLbjOl7z)
+🔑 [33 JavaScript Concepts Every Developer Should Know](https://dev.to/vidova/33-javascript-concepts-every-beginner-should-know-with-tutorials-4kao)
+
+**2. Ngoài lề**
 👉 [How to make everything bạn muốn với HTML, CSS và JS đơn giản nhất](https://www.w3schools.com/howto/default.asp)
+👉 [Format code đơn giản với Prettier Extension trên VSCode](https://viblo.asia/p/format-code-voi-prettier-tren-vs-code-RQqKLb70l7z)
+
+**3. Công cụ hỗ trợ**
+🪄 [Điều chỉnh tốc độ của chuyển động](https://cubic-bezier.com/#.17,.67,.83,.67)
+🪄 [Vẽ clip-path](https://bennettfeely.com/clippy/)
+🪄 [CSS Generator](https://cssgenerator.org/)
+🪄 [CSS Gradient](https://cssgradient.io/)
+🪄 [Tạo hình dáng ngẫu nhiên](https://www.blobmaker.app/)
+🪄 [Vẽ shape](https://www.shapedivider.app/)
+🪄 [Tạo hiệu ứng kính](https://hype4.academy/tools/glassmorphism-generator)
+🪄 [Hiệu ứng Animation](https://animista.net/)
+🪄 [Grid Generator](https://cssgrid-generator.netlify.app)
+
+**4. Tham khảo nguồn học**
+📖 [30 Days Of Javascript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
