@@ -284,6 +284,12 @@ const courses = [
 
 **1. `forEach`**
 
+**Cú pháp:**
+
+```js
+array.forEach(callback(currentValue, index, array));
+```
+
 ```js
 courses.forEach(function (course, index) {
   console.log(index, course);
@@ -298,6 +304,11 @@ courses.forEach(function (course, index) {
 - Kiểm tra tất cả phần tử của một mảng phải thỏa mãn một điều kiện nào đó
 - Thỏa mãn điều kiện sẽ trả về true, còn lại trả về false
 - Kiểm tra lần lượt theo thứ tự trong mảng, chỉ cần 1 phần tử trong mảng sai điều kiện thì sẽ dừng lại và trả về kết quả
+- **Cú pháp:**
+
+```js
+array.every(callback(currentValue, index, array));
+```
 
 ```js
 var isFree = courses.every(function (course, index) {
@@ -310,6 +321,11 @@ console.log(isFree);
 **3. `some`**
 
 - Duyệt mảng như every và forEach tuy nhiên chỉ cần có một phần tử trong mảng thỏa mãn điều kiện, vòng lặp sẽ ngay lập tức dừng lại
+- **Cú pháp:**
+
+```js
+array.some(callback(currentValue, index, array));
+```
 
 ```js
 var isFree = courses.some(function (course, index) {
@@ -324,6 +340,11 @@ console.log(isFree);
 - Dùng để tìm kiếm trong mảng
 - Nếu có sẽ trả về chính phần tử đó, nếu không có sẽ trả về `undefined`
 - Nó lặp qua từng phần tử, hàm được gọi lại sẽ trả về phần tử, kiểm tra với điều kiện nếu thỏa mãn thì vòng lặp sẽ dừng, trả về đối tượng đầu tiên tìm được
+- **Cú pháp:**
+
+```js
+array.find(callback(currentValue, index, array));
+```
 
 ```js
 var course = courses.find(function (course, index) {
@@ -335,12 +356,56 @@ console.log(course);
 
 **5. `filter`**
 
-Tương tự như `find` nhưng sẽ trả về tất cả các phần tử thỏa mãn điều kiện
+- Tương tự như `find` nhưng sẽ trả về tất cả các phần tử thỏa mãn điều kiện
+- **Cú pháp:**
+
+```js
+array.filter(callback(currentValue, index, array));
+```
 
 ```js
 var course = courses.filter(function (course, index) {
   return course.coin >= 100;
 });
 
+console.log(course);
+```
+
+**6. `map`**
+
+- Được sử dụng khi muốn thay đổi các phần tử, giá trị trong mảng và sẽ trả về một mảng mới từ mảng gốc, không làm thay đổi mảng gốc
+- **Cú pháp:**
+
+```js
+array.filter(callback(currentValue, index, array));
+```
+
+```js
+var course = courses.map(function (course, index, currentArray) {
+  return course.coin >= 100;
+});
+
+console.log(course);
+```
+
+**7. `reduce`**
+
+- Tích lũy các phần tử của mảng thành một giá trị duy nhất (số, chuỗi, đối tượng, v.v.).
+
+- **Cú pháp:**
+
+  ```js
+  array.reduce(callback(accumulator, currentValue, index, array), initialValue);
+  ```
+
+  - `callback`: Hàm được gọi cho từng phần tử.
+  - `accumulator`: Giá trị tích lũy từ lần gọi trước.
+  - `currentValue`: Giá trị hiện tại của phần tử.
+  - `initialValue` (tuỳ chọn): Giá trị khởi tạo của accumulator. Nếu không được cung cấp, phần tử đầu tiên của mảng sẽ được dùng.
+
+```js
+var course = courses.reduce(function (course, index, currentArray) {
+  return course.coin >= 100;
+});
 console.log(course);
 ```
