@@ -17,6 +17,7 @@
 | Tuần 11 | - DOM là gì<br>- Getting Element<br>- Adding attribute<br>- classList<br>- Adding Text to HTML element<br>- Adding style<br>- Manipulating DOM<br>- Event Listeners                                                                       | [Xem](./week-11/README.html) |
 | Tuần 13 | - String methods<br>- Array & Array methods<br>- Object & Object methods                                                                                                                                                                  | [Xem](./week-13/README.html) |
 | Tuần 14 | - Function<br>- Anothor Array methods<br> methods                                                                                                                                                                                         | [Xem](./week-14/README.html) |
+| Tuần 15 | - Destructuring<br>- Spread<br>- Rest <br>- setTimeout/setInterval<br> - Callback Hell<br>- Đồng bộ và Bất đồng bộ<br>- Giới thiệu về Date <br>- Giới thiệu về Math                                                                       | [Xem](./week-15/README.html) |
 
 #### Kiến thức ngoài lề
 
