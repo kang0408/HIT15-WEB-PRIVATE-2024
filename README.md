@@ -18,6 +18,7 @@
 | Tuần 13 | - String methods<br>- Array & Array methods<br>- Object & Object methods                                                                                                                                                                  | [Xem](./week-13/README.html) |
 | Tuần 14 | - Function<br>- Anothor Array methods<br> methods                                                                                                                                                                                         | [Xem](./week-14/README.html) |
 | Tuần 15 | - Destructuring<br>- Spread<br>- Rest <br>- setTimeout/setInterval<br> - Callback Hell<br>- Đồng bộ và Bất đồng bộ<br>- Giới thiệu về Date <br>- Giới thiệu về Math                                                                       | [Xem](./week-15/README.html) |
+| Tuần 16 | - Promise<br>- Async/Await<br>- Fetch API                                                                                                                                                                                                 | [Xem](./week-16/README.html) |
 
 #### Kiến thức ngoài lề
 
