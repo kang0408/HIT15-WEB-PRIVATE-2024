@@ -19,7 +19,7 @@
 
   ![alt text](image-1.png)
 
-👉 **Demo**: [Search Country v1.0](https://hit-15-web-private-2024-btvn.vercel.app/week-16/ex-1/index.html)
+👉 **Demo**: [Search Pokemon v1.0](https://hit-15-web-private-2024-btvn.vercel.app/week-16/ex-2/index.html)
 
 ### Bài 3:
 
